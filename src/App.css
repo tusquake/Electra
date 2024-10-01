@@ -1,0 +1,215 @@
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+h4 {
+  margin-bottom: 20px;
+}
+
+.footer{
+  text-align: center;
+  margin: auto;
+  max-width: 80%;
+  border-top: 1px solid #989898;
+  padding: 15px 0px;
+  font-size: 13px;
+}
+
+.dashboard-container {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .dashboard-container {
+    padding: 10px;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+}
+
+.navbar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 10%;
+  color: #ddd;
+  border-bottom: 2px solid #3c3c3c;
+}
+
+
+
+.navbar ul{
+  display:flex;
+  gap: 40px;
+  list-style: none;
+}
+
+.navbar li{
+  cursor: pointer;
+}
+
+.nav-right{
+  display: flex;
+  align-items: center;
+  gap: max(1vw,12px);
+}
+.navbar select{
+  padding: 5px 8px;
+  border-radius: 6px;
+  border: 2px solid white;
+  background: transparent;
+  color: white;
+  cursor:grab;
+}
+
+.navbar option{
+  background-color: #09005c;
+  color: white;
+}
+.navbar button{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 25px;
+  border-radius: 20px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #393939;
+  background: white;
+  border: none;
+  cursor: pointer;
+}
+
+.navbar button img{
+  width: 13px;
+}
+
+@media (max-width:900px){
+  .navbar{
+      padding: 20px 8%;
+  }
+
+  .navbar{
+      gap: 8px;
+      padding: 8px 18px;
+      font-size: 14px;
+  }
+}
+
+@media (max-width:768px){
+  .navbar{
+      padding: 20px 5%;
+  }
+
+  .navbar ul{
+      display:none;
+  }
+  .navbar button img{
+      width: 12px;
+  }
+}
+
+/* src/components/Navbar.css */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #333; /* Dark background color */
+  color: white; /* Text color */
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 40px;  /* Maintain aspect ratio */
+  height: 40px; /* Set height to a smaller value */
+  border-radius: 50%; /* This will round the image edges, but may not be necessary for logos */
+  margin-right: 5px; 
+  cursor: pointer;/* Space between logo and website name */
+}
+
+.website-name {
+  font-family:cursive;
+  color: white;
+  cursor: pointer;
+  font-size: 24px;
+  margin-right: -40px; /* Space between logo and website name */
+   /* Adjust font size for website name */
+}
+
+.nav-center {
+  display: flex;
+  gap: 20px; /* Space between links */
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none; /* Remove underline */
+  font-size: 18px; /* Adjust font size */
+}
+
+.nav-link:hover {
+  color: red;
+  ; /* Add underline on hover */
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.tooltip {
+  display: flex;
+  align-items: center;
+}
+
+h2{
+  text-align: center;
+}
+
+
+
+/* src/components/AnimatedLogo.css */
+.animated-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  animation: fadeIn 1s forwards; /* Animation effect */
+}
+
+.logo {
+  width: 50px; /* Adjust as needed */
+  height: 50px; /* Adjust as needed */
+  margin-right: 10px; /* Spacing between logo and text */
+}
+
+.animated-text {
+  margin-right: 10px; /* Space between text and avatar */
+  font-weight: bold;
+}
+
+/* Keyframes for fade-in effect */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
