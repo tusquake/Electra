@@ -29,4 +29,7 @@ Before you begin, ensure you have the following installed on your machine:
    Use the following command to clone the repository to your local machine:
    ```bash
    git clone https://github.com/tusquake/Electra.git
+<<<<<<< HEAD
    ```
+=======
+>>>>>>> 99a570ed4bca5b83a9978c4ffc27d1e98d524561
