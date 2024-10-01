@@ -14,14 +14,14 @@ const TopRightContainer = styled('div')({
   marginBottom: '10px',
 });
 
-const StyledDatePicker = styled(DatePicker)({
+const StyledDatePicker = styled(DatePicker)(() => ({
   margin: '0 10px', // Adjust margin for proper spacing
   width: '250px', // Set a fixed width
   border: '1px solid #ccc',
   borderRadius: '4px',
   padding: '10px',
   fontSize: '16px',
-});
+}));
 
 const SearchDateContainer = styled('div')({
   display: 'flex',
@@ -60,14 +60,14 @@ const ConnectionDashboard = ({ updateCharts }) => {
     };
 
     fetchData();
-  }, []);
+  }, [updateCharts]); // Include updateCharts in the dependency array
 
   useEffect(() => {
     if (connections.length > 0) {
       localStorage.setItem('connections', JSON.stringify(connections));
     }
     updateCharts(connections); // Update the charts on connection changes
-  }, [connections]);
+  }, [connections, updateCharts]); // Include updateCharts in the dependency array
 
   useEffect(() => {
     const filtered = connections.filter((conn) => {
