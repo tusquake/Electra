@@ -28,4 +28,4 @@ Before you begin, ensure you have the following installed on your machine:
 1. **Clone the Repository**  
    Use the following command to clone the repository to your local machine:
    ```bash
-   git clone https://github.com/yourusername/electricity-connection-dashboard.git
+   git clone https://github.com/tusquake/Electra.git
